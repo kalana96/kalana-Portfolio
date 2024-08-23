@@ -11,6 +11,10 @@ const navMenus = [
     link: "/#about",
   },
   {
+    name: "Skills",
+    link: "/#skills",
+  },
+  {
     name: "Services",
     link: ".#services",
   },

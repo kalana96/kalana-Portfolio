@@ -14,16 +14,13 @@ const About = () => {
             </h1>
           </div>
           <div className="text-slate-500">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Deleniti, architecto ullam reprehenderit dolorem magnam quae
-              adipisci velit
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Deleniti, architecto ullam reprehenderit dolorem magnam quae
-              adipisci velit
+            <p className="text-2xl text-justify">
+              Web developer with strong ability determine IT solution for client
+              projects. Developed exceptional skills in analytical and business
+              modeling to be applied in analyzing the client requirements. Also
+              having a keen ability to self -learn and apply learned stuff to
+              relevant field. Good organization skills in both project and extra
+              activities.
             </p>
             <div className="">
               <a

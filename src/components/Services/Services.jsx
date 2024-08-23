@@ -1,9 +1,12 @@
 import React from "react";
-import ServicesBox from "./ServicesBox";
+import ServicesBox from "./ServiceBox.jsx";
 
 const Services = () => {
   return (
-    <section className="bg-secondary dark:bg-gray-900 dark:text-white py-10">
+    <section
+      id="services"
+      className="bg-secondary dark:bg-gray-900 dark:text-white py-10"
+    >
       <div className="container flex flex-col items-center">
         <h1 className="inline-block text-3xl text-center font-bold mb-3 border-b-2 border-primary pb-1">
           Services

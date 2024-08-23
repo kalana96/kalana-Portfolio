@@ -3,7 +3,7 @@ import SkillsLevel from "./SkillsLevel";
 
 const Skills = () => {
   return (
-    <section id="about" className="bg-white dark:bg-slate-800 dark:text-white">
+    <section id="skills" className="bg-white dark:bg-slate-800 dark:text-white">
       <div className="container md:w-[70%] sm:py-16 py-10">
         <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
           <div className="sm:order-2 font-bold relative">
@@ -15,11 +15,12 @@ const Skills = () => {
             </h1>
           </div>
           <div className="text-slate-500 order-1">
-            <SkillsLevel skillsName="HTML, CSS" percentage="90%" />
-            <SkillsLevel skillsName="Figma" percentage="80%" />
-            <SkillsLevel skillsName="React" percentage="85%" />
-            <SkillsLevel skillsName="Vue" percentage="75%" />
-            <SkillsLevel skillsName="Tailwind" percentage="85%" />
+            <SkillsLevel skillsName="HTML5, CSS3" percentage="90%" />
+            <SkillsLevel skillsName="React" percentage="80%" />
+            <SkillsLevel skillsName="Tailwind CSS" percentage="70%" />
+            <SkillsLevel skillsName="Java" percentage="75%" />
+            <SkillsLevel skillsName="Spring Boot" percentage="70%" />
+            <SkillsLevel skillsName="MySQL" percentage="85%" />
           </div>
         </div>
       </div>
