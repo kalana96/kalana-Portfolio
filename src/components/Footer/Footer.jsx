@@ -1,14 +1,13 @@
-import styles from "./FooterStyles.module.css";
+import React from "react";
 
-function Footer() {
+const Footer = () => {
   return (
-    <section id="footer" className={styles.container}>
-      <p>
-        &copy; 2024 Kalana Abeywickrama. <br />
-        All rights reserved.
+    <footer className="text-center py-6 dark:bg-slate-950 dark:text-white">
+      <p className="container">
+        Copyright &copy; 2024 Kalana Abeywickrama || All Rights Recived
       </p>
-    </section>
+    </footer>
   );
-}
+};
 
 export default Footer;

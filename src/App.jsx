@@ -1,21 +1,22 @@
-// import { Connect } from "vite";
-import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Projects from "./components/Projects/Projects";
-import Skills from "./components/Skills/Skills";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import React from "react";
+import Navbar from "./components/navbar/Navbar.jsx";
+import Hero from "./components/hero/Hero.jsx";
+import About from "./components/about/About.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Skills from "./components/skills/Skills.jsx";
+import Services from "./components/services/Services.jsx";
 
-function App() {
+const App = () => {
   return (
-    <>
+    <div>
+      <Navbar />
       <Hero />
-      <Projects />
+      <About />
       <Skills />
-      <Contact />
+      <Services />
       <Footer />
-    </>
+    </div>
   );
-}
+};
 
 export default App;

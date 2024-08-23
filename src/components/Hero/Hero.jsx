@@ -1,66 +1,47 @@
-import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/Design uten navn.png";
-import sun from "../../assets/sun.svg";
-import moon from "../../assets/moon.svg";
-import twitterLight from "../../assets/twitter-light.svg";
-import twitterDark from "../../assets/twitter-dark.svg";
-import githubLight from "../../assets/github-light.svg";
-import githubDark from "../../assets/github-dark.svg";
-import linkedinLight from "../../assets/linkedin-light.svg";
-import linkedinDark from "../../assets/linkedin-dark.svg";
-import CV from "../../assets/cv.pdf";
-import { useTheme } from "../../common/ThemeContext";
+import React from "react";
+import personImg from "../../assets/mypic.png";
 
-function Hero() {
-  const { theme, toggleTheme } = useTheme();
-
-  const themeIcon = theme === "light" ? sun : moon;
-  const twitterIcon = theme === "light" ? twitterLight : twitterDark;
-  const githubIcon = theme === "light" ? githubLight : githubDark;
-  const linkedinIcon = theme === "light" ? linkedinLight : linkedinDark;
+const Hero = () => {
   return (
-    <section id="hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
-        <img
-          src={heroImg}
-          className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
-        />
-        <img
-          className={styles.colorMode}
-          src={themeIcon}
-          alt="Color mode icon"
-          onClick={toggleTheme}
-        />
-      </div>
-      <div className={styles.info}>
-        <h1>
-          Kalana
-          <br />
-          Abeywickrama
-        </h1>
-        <h2>Web Developer</h2>
-        <span>
-          <a href="https://twitter.com/" target="_blank">
-            <img src={twitterIcon} alt="Twitter icon" />
-          </a>
-          <a href="https://github.com/" target="_blank">
-            <img src={githubIcon} alt="Github icon" />
-          </a>
-          <a href="https://linkedin.com/" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
-          </a>
-        </span>
-        <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
-        </p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
-      </div>
-    </section>
+    <>
+      <section className="w-full bg-secondary dark:bg-gray-900 dark:text-white">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[600px] space-y-4 py-12 sm:py-0 ">
+          <div className="">
+            <div className="space-y-5 grid justify-items-center sm:justify-items-start">
+              <p className=" ">Hello...</p>
+              <p className="text-4xl md:text-6xl font-bold text-black/80 dark:text-white">
+                I'm Kalana Abeywickrama
+              </p>
+              <p className="text-3xl text-gray-700 dark:text-white">
+                Full Stack Developer
+              </p>
+              <p className="text-black/75 dark:text-white/70 text-center sm:text-left">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Molestiae quod accusamus accusantium voluptas autem doloribus?
+              </p>
+              <a
+                href="mailto:michle@test.com"
+                className="inline-block primary-btn !my-3"
+              >
+                Hire me
+              </a>
+            </div>
+          </div>
+          {/* image section */}
+          {/* <div
+            className={`bg-[url("https://source.unsplash.com/random")] bg-no-repeat bg-center bg-cover `}
+          > */}
+          <div>
+            <img
+              src={personImg}
+              className="w-full md:max-w-sm mx-auto backdrop-blur-sm"
+              alt="person"
+            />
+          </div>
+        </div>
+      </section>
+    </>
   );
-}
+};
 
 export default Hero;
