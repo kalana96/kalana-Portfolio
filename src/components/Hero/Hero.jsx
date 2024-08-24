@@ -1,5 +1,7 @@
 import React from "react";
 import personImg from "../../assets/mypic.png";
+import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
+import Typewriter from "./Typewriter";
 
 const Hero = () => {
   return (
@@ -13,14 +15,33 @@ const Hero = () => {
                 I'm Kalana Abeywickrama
               </p>
               <p className="text-3xl text-gray-700 dark:text-white">
-                Full Stack Developer
+                I am a <Typewriter />
               </p>
               <p className="text-black/75 dark:text-white/70 text-center sm:text-left">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Molestiae quod accusamus accusantium voluptas autem doloribus?
+                I am a motivated and versatile individual, always eager to take
+                on new challenges. With a passion for learning I am dedicated to
+                delivering high-quality results. With a positive attitude and a
+                growth mindset, I am ready to make a meaningful contribution and
+                achieve great things.
               </p>
+              {/* Social Handle */}
+              <div className="flex items-center gap-3 mt-6 text-black/75 dark:text-white/70">
+                <a href="https://www.linkedin.com/in/kalana-abeywickrama-575aa81b3">
+                  <FaLinkedin className="text-3xl" />
+                </a>
+                <a href="https://github.com/kalana96">
+                  <FaGithub className="text-3xl" />
+                </a>
+                <a href="https://www.instagram.com/kalana_sndp?igsh=MWR0dHdkczdxMTJ2dQ%3D%3D&utm_source=qr">
+                  <FaInstagram className="text-3xl" />
+                </a>
+                <a href="https://www.facebook.com/kalana.sandeep?mibextid=LQQJ4d">
+                  <FaFacebook className="text-3xl" />
+                </a>
+              </div>
+              <br />
               <a
-                href="mailto:michle@test.com"
+                href="mailto:kalanasandeep55@gmail.com"
                 className="inline-block primary-btn !my-3"
               >
                 Hire me

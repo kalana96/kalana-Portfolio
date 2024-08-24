@@ -1,26 +1,21 @@
 import React from "react";
-import SkillsLevel from "./SkillsLevel";
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-white dark:bg-slate-800 dark:text-white">
-      <div className="container md:w-[70%] sm:py-16 py-10">
-        <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
-          <div className="sm:order-2 font-bold relative">
-            <div className=" text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">
-              SKILLS
-            </div>
-            <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-3xl md:text-4xl">
-              Skills
-            </h1>
+    <section
+      id="skills"
+      className="bg-secondary dark:bg-slate-800 dark:text-white py-10"
+    >
+      <div className="container mx-auto py-16">
+        <h2 className="text-3xl font-bold text-center mb-8">Skills</h2>
+        <div className="grid grid-cols-2 gap-8">
+          <div className="flex flex-col items-center bg-gray-800">
+            <h3 className="text-2xl font-bold mb-4">Frontend</h3>
+            <div className="flex flex-wrap justify-center gap-4"></div>
           </div>
-          <div className="text-slate-500 order-1">
-            <SkillsLevel skillsName="HTML5, CSS3" percentage="90%" />
-            <SkillsLevel skillsName="React" percentage="80%" />
-            <SkillsLevel skillsName="Tailwind CSS" percentage="70%" />
-            <SkillsLevel skillsName="Java" percentage="75%" />
-            <SkillsLevel skillsName="Spring Boot" percentage="70%" />
-            <SkillsLevel skillsName="MySQL" percentage="85%" />
+          <div className="flex flex-col items-center bg-gray-800">
+            <h3 className="text-2xl font-bold mb-4">Backend</h3>
+            <div className="flex flex-wrap justify-center gap-4"></div>
           </div>
         </div>
       </div>

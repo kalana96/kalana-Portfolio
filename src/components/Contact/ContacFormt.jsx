@@ -1,9 +1,9 @@
-import styles from './ContactStyles.module.css';
+import styles from "./ContactStyles.module.css";
 
-function Contact() {
+function ContactForm() {
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      {/* <h1 className="sectionTitle">Contact</h1> */}
       <form action="">
         <div className="formGroup">
           <label htmlFor="name" hidden>
@@ -37,7 +37,8 @@ function Contact() {
             name="message"
             id="message"
             placeholder="Message"
-            required></textarea>
+            required
+          ></textarea>
         </div>
         <input className="hover btn" type="submit" value="Submit" />
       </form>
@@ -45,4 +46,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactForm;
