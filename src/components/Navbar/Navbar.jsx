@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
+
 const navMenus = [
   {
     name: "About",
@@ -51,7 +52,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="home" className="bg-secondary dark:bg-gray-900">
+      <nav
+        id="home"
+        className="top-0 left-0 right-0 w-full z-50 bg-secondary dark:bg-gray-900"
+      >
         <div className="container flex justify-between items-center py-3 sm:py-0">
           <h1 className="text-3xl md:text-5xl font-bold text-primary flex justify-center items-center ">
             Portfolio
@@ -105,7 +109,7 @@ const Navbar = () => {
               />
             </div>
             {showMenu && (
-              <div className=" fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl  left-0 w-full z-10 py-10">
+              <div className="fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl left-0 w-full z-10 py-10">
                 <ul className="flex flex-col items-center gap-4 ">
                   {navMenus.map((navMenu, index) => {
                     return (
