@@ -14,7 +14,7 @@ const About = () => {
             </h1>
           </div>
           <div className="text-slate-500">
-            <p className="text-2xl text-justify">
+            <p className="text-2xl text-justify dark:text-white/70">
               Web developer with strong ability determine IT solution for client
               projects. Developed exceptional skills in analytical and business
               modeling to be applied in analyzing the client requirements. Also

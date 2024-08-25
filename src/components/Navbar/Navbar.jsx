@@ -62,7 +62,7 @@ const Navbar = () => {
                 return (
                   <li key={index}>
                     <a
-                      className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                      className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1"
                       href={navMenu.link}
                     >
                       {navMenu.name}
@@ -106,12 +106,12 @@ const Navbar = () => {
             </div>
             {showMenu && (
               <div className=" fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl  left-0 w-full z-10 py-10">
-                <ul className="flex flex-col items-center gap-4">
+                <ul className="flex flex-col items-center gap-4 ">
                   {navMenus.map((navMenu, index) => {
                     return (
                       <li key={index}>
                         <a
-                          className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                          className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
                           href={navMenu.link}
                           onClick={() => setShowMenu(false)}
                         >

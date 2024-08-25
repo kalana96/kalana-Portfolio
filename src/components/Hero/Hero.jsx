@@ -1,12 +1,15 @@
 import React from "react";
+import Typewriter from "./TypeWriter.jsx";
 import personImg from "../../assets/mypic.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import Typewriter from "./Typewriter";
 
 const Hero = () => {
   return (
     <>
-      <section className="w-full bg-secondary dark:bg-gray-900 dark:text-white">
+      <section
+        id="home"
+        className="w-full bg-secondary dark:bg-gray-900 dark:text-white"
+      >
         <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[600px] space-y-4 py-12 sm:py-0 ">
           <div className="">
             <div className="space-y-5 grid justify-items-center sm:justify-items-start">
@@ -26,16 +29,28 @@ const Hero = () => {
               </p>
               {/* Social Handle */}
               <div className="flex items-center gap-3 mt-6 text-black/75 dark:text-white/70">
-                <a href="https://www.linkedin.com/in/kalana-abeywickrama-575aa81b3">
+                <a
+                  href="https://www.linkedin.com/in/kalana-abeywickrama-575aa81b3"
+                  className="hover:translate-x-1 duration-300"
+                >
                   <FaLinkedin className="text-3xl" />
                 </a>
-                <a href="https://github.com/kalana96">
+                <a
+                  href="https://github.com/kalana96"
+                  className="hover:translate-x-1 duration-300"
+                >
                   <FaGithub className="text-3xl" />
                 </a>
-                <a href="https://www.instagram.com/kalana_sndp?igsh=MWR0dHdkczdxMTJ2dQ%3D%3D&utm_source=qr">
+                <a
+                  href="https://www.instagram.com/kalana_sndp?igsh=MWR0dHdkczdxMTJ2dQ%3D%3D&utm_source=qr"
+                  className="hover:translate-x-1 duration-300"
+                >
                   <FaInstagram className="text-3xl" />
                 </a>
-                <a href="https://www.facebook.com/kalana.sandeep?mibextid=LQQJ4d">
+                <a
+                  href="https://www.facebook.com/kalana.sandeep?mibextid=LQQJ4d"
+                  className="hover:translate-x-1 duration-300"
+                >
                   <FaFacebook className="text-3xl" />
                 </a>
               </div>
