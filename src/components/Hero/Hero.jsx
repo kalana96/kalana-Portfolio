@@ -8,9 +8,9 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="w-full bg-secondary dark:bg-gray-900 dark:text-white"
+        className="w-full h-full bg-secondary dark:bg-gray-900 dark:text-white"
       >
-        <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[600px] space-y-4 py-12 sm:py-0 ">
+        <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[750px] space-y-4 py-20 ">
           <div className="">
             <div className="space-y-5 grid justify-items-center sm:justify-items-start">
               <p className=" ">Hello...</p>

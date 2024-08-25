@@ -2,16 +2,41 @@ import React from "react";
 import imgSwingInventory from "../../assets/SwingInventory.png";
 import imgLaravelInventory from "../../assets/laravel inventory.png";
 import imgJavaRMS from "../../assets/RMS.png";
+import imgOEM from "../../assets/OEM.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa";
 
 const project = [
   {
+    image: imgOEM,
+    keyTags: [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Spring Security",
+      "React",
+      "Tailwind CSS",
+      "HTMS",
+      "CSS",
+    ],
+    topic: "Online Examination System",
+    description:
+      "A web-based platform for conducting online exams, with a focus on scalability and user experience. User authentication, timed exams, auto-grading system and offline data synchronization... ",
+    links: [
+      {
+        webLink: "https://facebook.com",
+      },
+      {
+        githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
+      },
+    ],
+  },
+  {
     image: imgJavaRMS,
-    keyTags: ["Java", "Spring", "Hibernate"],
+    keyTags: ["Java", "Spring", "MySQL"],
     topic: "Restaurant Management System",
     description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.",
+      "A desktop application for managing restaurant orders, billing, Table management and inventory. Developed a custom table management system to handle peak hours efficiently.... ",
     links: [
       {
         webLink: "https://facebook.com",
@@ -23,10 +48,10 @@ const project = [
   },
   {
     image: imgLaravelInventory,
-    keyTags: ["Laravel", "PHP", "MySQL"],
-    topic: "Vehicle Rental",
+    keyTags: ["HTML", "CSS", "Bootstrap", "Laravel", "PHP", "MySQL"],
+    topic: "Vehicle Rental Management System",
     description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.",
+      " A comprehensive Vehicle Rental Management System built using Laravel, designed to streamline the process of Booking, vehicle listning, real-time allert, reporting, and analytics...",
     links: [
       {
         webLink: "https://youtube.com",
@@ -38,10 +63,10 @@ const project = [
   },
   {
     image: imgSwingInventory,
-    keyTags: ["Java", "Swing", "MySQL"],
+    keyTags: ["Java", "Swing", "MySQL", "JDBC"],
     topic: "Inventory Management System",
     description:
-      "The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.",
+      "A desktop application for managing stock levels, purchase orders, sales, Inventory tracking, supplier management, GRN, reporting tools...",
     links: [
       {
         webLink: "https://example.com", // Updated for example purpose
@@ -64,7 +89,7 @@ function ProjectCard() {
                 key={index}
                 className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl w-93 transition-transform transform hover:-translate-y-10 hover:shadow-black dark:bg-slate-700"
               >
-                <div className="relative h-30 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                <div className="relative h-40 w-45l mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
                   <img
                     className="object-cover w-full h-full"
                     src={image}
@@ -82,7 +107,6 @@ function ProjectCard() {
                   ))}
                 </div>
                 <div className="p-4">
-                  {" "}
                   {/* Reduced padding here */}
                   <h5 className="block mb-1 font-sans text-xl antialiased font-semibold leading-tight tracking-normal text-blue-gray-900 dark:text-white">
                     {topic}
@@ -92,7 +116,6 @@ function ProjectCard() {
                   </p>
                 </div>
                 <div className="flex space-x-3 p-4">
-                  {" "}
                   {/* Reduced padding and spacing here */}
                   <a
                     href={links[0].webLink}

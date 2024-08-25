@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="bg-white dark:bg-slate-800 dark:text-white py-10"
+      className="bg-white dark:bg-slate-800 dark:text-white pt-20"
     >
       <div className="container flex flex-col items-center">
         <h1 className="inline-block text-5xl text-center font-semibold mb-5 border-b-2 border-primary pb-1">

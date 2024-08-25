@@ -26,7 +26,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-secondary dark:bg-gray-900 dark:text-white py-10"
+      className="bg-secondary dark:bg-gray-900 dark:text-white py-20"
     >
       <div className="container flex flex-col items-center">
         <h1 className="inline-block text-5xl text-center font-semibold mb-3 border-b-2 border-primary pb-1">
