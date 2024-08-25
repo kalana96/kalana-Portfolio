@@ -1,39 +1,24 @@
-import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitLift from "../../assets/fitlift.png";
-import ProjectCard from "../../common/ProjectCard";
+import ProjectCard from "./ProjectCard";
 
 function Projects() {
   return (
-    <section id="projects" className={styles.container}>
-      <h1 className="sectionTitle">Projects</h1>
-      <div className={styles.projectsContainer}>
-        <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
-        />
-        <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
-        />
-        <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
-        />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
-        />
+    <section
+      id="projects"
+      className="bg-white dark:bg-slate-800 dark:text-white py-10"
+    >
+      <div className="container flex flex-col items-center">
+        <h1 className="inline-block text-5xl text-center font-semibold mb-5 border-b-2 border-primary pb-1">
+          Projects
+        </h1>
+        <p className="text-slate-500 text-lg text-center md:w-[50%] mx-auto dark:text-white/70">
+          I have worked on a wide range of projects. From web application
+          development to windows application development. Here are some of my
+          projects.
+        </p>
+        <br />
+      </div>
+      <div>
+        <ProjectCard />
       </div>
     </section>
   );

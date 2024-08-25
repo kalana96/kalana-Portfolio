@@ -40,7 +40,7 @@ const Services = [
 ];
 const ServicesBox = () => {
   return (
-    <section id="services" className="my-10 container">
+    <section className="my-10 container">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {Services.map(({ name, description, image, icon, bgColor }) => (
           <div

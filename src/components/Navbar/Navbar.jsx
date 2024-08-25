@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu } from "react-icons/fi";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
+
 const navMenus = [
-  {
-    name: "Home",
-    link: "/#home",
-  },
   {
     name: "About",
     link: "/#about",
@@ -15,8 +12,20 @@ const navMenus = [
     link: ".#services",
   },
   {
+    name: "Projects",
+    link: ".#projects",
+  },
+  {
+    name: "Skills",
+    link: "/#skills",
+  },
+  {
+    name: "Education",
+    link: "/#education",
+  },
+  {
     name: "Contact",
-    link: "#",
+    link: "/#contact",
   },
 ];
 
@@ -43,7 +52,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="home" className="bg-secondary dark:bg-gray-900">
+      <nav
+        id="home"
+        className="top-0 left-0 right-0 w-full z-50 bg-secondary dark:bg-gray-900"
+      >
         <div className="container flex justify-between items-center py-3 sm:py-0">
           <h1 className="text-3xl md:text-5xl font-bold text-primary flex justify-center items-center ">
             Portfolio
@@ -54,7 +66,7 @@ const Navbar = () => {
                 return (
                   <li key={index}>
                     <a
-                      className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                      className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer hover:translate-x-1 duration-300 hover:text-primary space-x-1"
                       href={navMenu.link}
                     >
                       {navMenu.name}
@@ -97,13 +109,13 @@ const Navbar = () => {
               />
             </div>
             {showMenu && (
-              <div className=" fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl  left-0 w-full z-10 py-10">
-                <ul className="flex flex-col items-center gap-4">
+              <div className="fixed top-16 bg-white dark:text-white dark:bg-gray-950 shadow-md rounded-b-xl left-0 w-full z-10 py-10">
+                <ul className="flex flex-col items-center gap-4 ">
                   {navMenus.map((navMenu, index) => {
                     return (
                       <li key={index}>
                         <a
-                          className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer"
+                          className="text-xl font-semibold px-2 py-4 md:py-6 inline-block cursor-pointer "
                           href={navMenu.link}
                           onClick={() => setShowMenu(false)}
                         >
