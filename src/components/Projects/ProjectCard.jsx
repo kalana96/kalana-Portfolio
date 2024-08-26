@@ -1,12 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import imgSwingInventory from "../../assets/SwingInventory.png";
 import imgLaravelInventory from "../../assets/laravel inventory.png";
 import imgJavaRMS from "../../assets/RMS.png";
 import imgOEM from "../../assets/OEM.jpg";
-import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa";
+import { FaGithub, FaLink } from "react-icons/fa";
 
-const project = [
+const projects = [
   {
     image: imgOEM,
     keyTags: [
@@ -30,6 +29,7 @@ const project = [
         githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
       },
     ],
+    category: "Web Apps",
   },
   {
     image: imgJavaRMS,
@@ -45,6 +45,7 @@ const project = [
         githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
       },
     ],
+    category: "Desktop Apps",
   },
   {
     image: imgLaravelInventory,
@@ -60,6 +61,7 @@ const project = [
         githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
       },
     ],
+    category: "Web Apps",
   },
   {
     image: imgSwingInventory,
@@ -69,54 +71,76 @@ const project = [
       "A desktop application for managing stock levels, purchase orders, sales, Inventory tracking, supplier management, GRN, reporting tools...",
     links: [
       {
-        webLink: "https://example.com", // Updated for example purpose
+        webLink: "https://example.com",
       },
       {
         githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
       },
     ],
+    category: "Desktop Apps",
   },
 ];
 
 function ProjectCard() {
+  // State to track the selected category
+  const [selectedCategory, setSelectedCategory] = useState("All");
+
+  // Function to filter projects based on selected category
+  const filteredProjects =
+    selectedCategory === "All"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
+
   return (
     <>
-      <section className="container my-10 flex flex-col items-center">
+      <section className="container flex flex-col items-center">
+        {/* Filter Buttons */}
+        <div className="flex space-x-4 mb-1">
+          {["All", "Web Apps", "Desktop Apps"].map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-4 py-2 text-sm font-semibold rounded-lg transition-colors duration-300 ${
+                selectedCategory === category
+                  ? "bg-primary text-white"
+                  : "bg-transparent text-primary hover:bg-primary hover:text-white"
+              } border border-primary`}
+            >
+              {category.toUpperCase()}
+            </button>
+          ))}
+        </div>
+
+        {/* Project Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hue-rotate-0">
-          {project.map(
+          {filteredProjects.map(
             ({ image, description, keyTags, links, topic }, index) => (
               <div
                 key={index}
                 className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl w-93 transition-transform transform hover:-translate-y-10 hover:shadow-black dark:bg-slate-700"
               >
-                <div className="relative h-40 w-45l mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <img
-                    className="object-cover w-full h-full"
-                    src={image}
-                    alt="card-image"
-                  />
+                <div className="relative h-40 w-45 mx-4 mt-3 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                  <img className="object-cover" src={image} alt="card-image" />
                 </div>
                 <div className="px-6 pt-4 pb-2">
                   {keyTags.map((tag, index) => (
                     <span
                       key={index}
-                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-1"
+                      className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-normal text-gray-700 mr-2 mb-1"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="p-4">
-                  {/* Reduced padding here */}
+                <div className="p-4 pb-20">
                   <h5 className="block mb-1 font-sans text-xl antialiased font-semibold leading-tight tracking-normal text-blue-gray-900 dark:text-white">
                     {topic}
                   </h5>
-                  <p className="block font-sans text-base antialiased font-light leading-tight text-inherit dark:text-white/70">
+                  <p className="block font-sans text-base antialiased font-light text-justify leading-tight text-inherit dark:text-white/70">
                     {description}
                   </p>
                 </div>
-                <div className="flex space-x-3 p-4">
-                  {/* Reduced padding and spacing here */}
+                <div className="absolute bottom-4 left-3 flex space-x-3">
                   <a
                     href={links[0].webLink}
                     target="_blank"
