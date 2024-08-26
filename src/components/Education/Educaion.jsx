@@ -1,5 +1,5 @@
 import React from "react";
-import imgUOM from "../../assets/uom.png";
+import imgUOM from "../../assets/UOM.png";
 import imgSLIATE from "../../assets/SLIATE.jpg";
 
 const experiences = [
