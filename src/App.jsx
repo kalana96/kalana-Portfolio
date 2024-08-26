@@ -8,7 +8,6 @@ import Services from "./components/Services/Services.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Education from "./components/Education/Educaion.jsx";
 import Projects from "./components/Projects/Projects.jsx";
-// import Experience from "./components/Experince/Experiences.jsx";
 
 const App = () => {
   return (

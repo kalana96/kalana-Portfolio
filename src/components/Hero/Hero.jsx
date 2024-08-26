@@ -1,5 +1,5 @@
 import React from "react";
-import Typewriter from "./TypeWriter.jsx";
+import Typewriter from "./writer.jsx";
 import personImg from "../../assets/mypic.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
