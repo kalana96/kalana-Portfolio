@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="bg-white dark:bg-slate-800 dark:text-white pt-20"
     >
-      <div className="container md:w-[80%] sm:py-16 ">
+      <div className="container md:w-[80%] sm:py-16 px-3">
         <div className="grid items-center gap-4 grid-cols-1 sm:grid-cols-2">
           <div className=" font-bold relative">
             <div className=" text-center text-6xl xl:text-8xl font-bold text-black/5 dark:text-gray-700">

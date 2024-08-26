@@ -32,7 +32,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="bg-white dark:bg-slate-800 dark:text-white pt-20 border-t-2 border-gray-300/50"
+      className="bg-white dark:bg-slate-800 dark:text-white pt-20 border-t-2 border-gray-300/50 px-3"
     >
       <div className="p-5 container flex flex-col items-center ">
         <h1 className="inline-block text-5xl text-center font-semibold mb-5 border-b-2 border-primary pb-1">

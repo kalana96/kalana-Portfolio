@@ -43,7 +43,7 @@ const Contact = () => {
               className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light rounded-xl shadow-xl text-left dark:bg-slate-800"
             >
               <FormInput
-                // inputLabel="Full Name"
+                inputLabel="Full Name"
                 labelFor="name"
                 inputType="text"
                 inputId="name"
@@ -52,7 +52,7 @@ const Contact = () => {
                 ariaLabelName="Name"
               />
               <FormInput
-                // inputLabel="Email"
+                inputLabel="Email"
                 labelFor="email"
                 inputType="email"
                 inputId="email"
@@ -60,7 +60,7 @@ const Contact = () => {
                 placeholderText="Your email"
                 ariaLabelName="Email"
               />
-              {/* <FormInput
+              <FormInput
                 inputLabel="Subject"
                 labelFor="subject"
                 inputType="text"
@@ -68,7 +68,7 @@ const Contact = () => {
                 inputName="subject"
                 placeholderText="Subject"
                 ariaLabelName="Subject"
-              /> */}
+              />
 
               <div className="mt-6">
                 <label
@@ -84,7 +84,7 @@ const Contact = () => {
                   name="message"
                   cols="14"
                   rows="6"
-                  // aria-label="Message"
+                  aria-label="Message"
                 ></textarea>
               </div>
 
