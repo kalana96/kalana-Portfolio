@@ -68,7 +68,7 @@ const ServicesBox = () => {
                 <h1 className="text-2xl font-bold text-gray-100 mb-5 border-b-2 border-spacing-2 pb-1">
                   {name}
                 </h1>
-                <p className="text-gray-300">{description}</p>
+                <p className="text-gray-300 text-justify">{description}</p>
               </div>
               {/* See More Button */}
               <div className="mt-4">

@@ -44,7 +44,7 @@ const Education = () => {
         </p>
         <br />
       </div>
-      <div className="container flex flex-col md:w-[50%] mx-auto items-cente py-10">
+      <div className="container flex flex-col md:w-[50%] mx-auto items-cente ">
         {experiences.map((exp) => {
           return (
             <div className="mb-10" key={`experience${exp.university}`}>
