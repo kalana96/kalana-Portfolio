@@ -112,15 +112,19 @@ function ProjectCard() {
         </div>
 
         {/* Project Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 hue-rotate-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 hue-rotate-0 px-3">
           {filteredProjects.map(
             ({ image, description, keyTags, links, topic }, index) => (
               <div
                 key={index}
-                className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl w-93 transition-transform transform hover:-translate-y-10 hover:shadow-black dark:bg-slate-700"
+                className="relative flex flex-col mt-6 text-gray-700 bg-white shadow-lg bg-clip-border rounded-xl transition-transform transform hover:-translate-y-10 hover:shadow-black dark:bg-slate-700 w-[350px]"
               >
-                <div className="relative h-40 w-45 mx-4 mt-3 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-                  <img className="object-cover" src={image} alt="card-image" />
+                <div className="relative h-40 mx-4 mt-3 overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+                  <img
+                    className="w-full h-full object-cover"
+                    src={image}
+                    alt="card-image"
+                  />
                 </div>
                 <div className="px-6 pt-4 pb-2">
                   {keyTags.map((tag, index) => (

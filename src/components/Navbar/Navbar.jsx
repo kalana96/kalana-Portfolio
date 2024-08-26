@@ -54,7 +54,7 @@ const Navbar = () => {
     <>
       <nav
         id="home"
-        className="fixed top-0 left-0 right-0 w-full z-50 bg-secondary dark:bg-gray-900"
+        className="fixed top-0 left-0 right-0 w-full z-50 bg-secondary dark:bg-gray-900 px-3"
       >
         <div className="container flex justify-between items-center py-3 sm:py-0">
           <h1 className="text-3xl md:text-5xl font-bold text-primary flex justify-center items-center ">
@@ -86,6 +86,14 @@ const Navbar = () => {
                   onClick={() => setTheme("dark")}
                 />
               )}
+              <div className="pl-5">
+                <a
+                  href="https://github.com/kalana96"
+                  className="outline-btn my-6"
+                >
+                  Github Profile
+                </a>
+              </div>
             </ul>
           </div>
           {/* Mobile Responsive Menu */}

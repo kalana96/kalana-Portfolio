@@ -8,7 +8,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className="w-full h-full bg-secondary dark:bg-gray-900 dark:text-white"
+        className="w-full h-full bg-secondary dark:bg-gray-900 dark:text-white px-3"
       >
         <div className="container grid grid-cols-1 sm:grid-cols-2 items-center sm:h-[750px] space-y-4 py-20 ">
           <div className="">
@@ -67,10 +67,10 @@ const Hero = () => {
           {/* <div
             className={`bg-[url("https://source.unsplash.com/random")] bg-no-repeat bg-center bg-cover `}
           > */}
-          <div>
+          <div className="">
             <img
               src={personImg}
-              className="w-full md:max-w-sm mx-auto backdrop-blur-sm"
+              className="w-full md:max-w-sm mx-auto backdrop-blur-sm "
               alt="person"
             />
           </div>
