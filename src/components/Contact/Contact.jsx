@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 import Button from "./reusable/Button.jsx";
 import FormInput from "./reusable/FormInput.jsx";
-// import ContactForm from "./ContacFormt";
 
 const Contact = () => {
   const form = useRef();
@@ -10,15 +11,16 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, {
-        publicKey: "YOUR_PUBLIC_KEY",
+      .sendForm("service_b39c6or", "template_9n6t29c", form.current, {
+        publicKey: "GG5k-rZ2odzmtw-sn",
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          toast.success("Successfully sent!");
+          form.current.reset(); // Clear the form after successful submission
         },
         (error) => {
-          console.log("FAILED...", error.text);
+          toast.error("error!");
         }
       );
   };
@@ -94,6 +96,7 @@ const Contact = () => {
                   type="submit"
                   aria-label="Send Message"
                 />
+                <Toaster />
               </div>
             </form>
           </div>

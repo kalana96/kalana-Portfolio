@@ -27,9 +27,9 @@ const About = () => {
             </p>
             <div className="">
               <a
-                href="../../assets/Fake Resume.pdf"
+                href="https://drive.google.com/file/d/1nFO5p9FZ_2QpApch2g-h-RZRefRhSlsP/view?usp=sharing"
                 className="primary-btn my-6 mr-6 inline-block"
-                download
+                // download
               >
                 Download Resume
               </a>
