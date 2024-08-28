@@ -53,7 +53,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        id="home"
+        id="navigation"
         className="fixed top-0 left-0 right-0 w-full z-50 bg-secondary dark:bg-gray-900 px-3"
       >
         <div className="container flex justify-between items-center py-3 sm:py-0">
