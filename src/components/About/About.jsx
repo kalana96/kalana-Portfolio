@@ -27,7 +27,7 @@ const About = () => {
             </p>
             <div className="">
               <a
-                href="https://drive.google.com/file/d/1VIN7jVNdjKPQ239KsA-BLr3BrX1P7Jak/view?usp=sharing"
+                href="https://drive.google.com/file/d/1TkbcqDByEp79PmYQwm4dqUuJmELUVOqr/view?usp=drive_link"
                 className="primary-btn my-6 mr-6 inline-block"
                 // download
               >
