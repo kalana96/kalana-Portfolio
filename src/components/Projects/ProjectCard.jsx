@@ -36,7 +36,7 @@ const projects = [
   {
     image: imgJavaRMS,
     keyTags: ["Java", "Swing", "MySQL"],
-    topic: "Restaurant Management System",
+    topic: "Restaurant Managementtt System",
     description:
       "A desktop application for managing restaurant orders, KOT, billing, Table management and inventory. Developed a custom table management system to handle peak hours efficiently.... ",
     links: [
