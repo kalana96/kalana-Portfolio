@@ -3,6 +3,7 @@ import imgSwingInventory from "../../assets/SwingInventory.png";
 import imgLaravelInventory from "../../assets/laravel inventory.png";
 import imgJavaRMS from "../../assets/RMS.png";
 import imgOEM from "../../assets/OEM.jpg";
+import imgTour from "../../assets/tour lanka.png";
 import { FaGithub, FaLink } from "react-icons/fa";
 
 const projects = [
@@ -79,6 +80,22 @@ const projects = [
       },
     ],
     category: "Desktop Apps",
+  },
+  {
+    image: imgTour,
+    keyTags: ["HTML5", "CSS3", "Bootstrap", "JavaScript"],
+    topic: "Tour Lanka",
+    description:
+      "This is a website dedicated to showcasing the heritage and cultural significance of Rathnapura, Sri Lanka. The site includes information on historical sites, natural landmarks, and other cultural highlights of the region....",
+    links: [
+      {
+        webLink: "https://tourlanka.netlify.app/",
+      },
+      {
+        githubLink: "https://github.com/kalana96/tour-lanka",
+      },
+    ],
+    category: "Web Apps",
   },
 ];
 
