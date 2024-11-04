@@ -11,11 +11,12 @@ const projects = [
     keyTags: [
       "Java",
       "Spring Boot",
-      "MySQL",
       "Spring Security",
+      "JWT",
+      "MySQL",
       "React",
       "Tailwind CSS",
-      "HTMS",
+      "HTML",
       "CSS",
     ],
     topic: "Online Examination System",
@@ -23,26 +24,26 @@ const projects = [
       "A web-based platform for conducting online exams, with a focus on scalability and user experience. User authentication, timed exams, auto-grading system and offline data synchronization... ",
     links: [
       {
-        webLink: "https://facebook.com",
+        webLink: "#",
       },
       {
-        githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
+        githubLink: "https://github.com/kalana96/online-examination-app",
       },
     ],
     category: "Web Apps",
   },
   {
     image: imgJavaRMS,
-    keyTags: ["Java", "Spring", "MySQL"],
+    keyTags: ["Java", "Swing", "MySQL"],
     topic: "Restaurant Management System",
     description:
-      "A desktop application for managing restaurant orders, billing, Table management and inventory. Developed a custom table management system to handle peak hours efficiently.... ",
+      "A desktop application for managing restaurant orders, KOT, billing, Table management and inventory. Developed a custom table management system to handle peak hours efficiently.... ",
     links: [
       {
-        webLink: "https://facebook.com",
+        webLink: "#",
       },
       {
-        githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
+        githubLink: "https://github.com/kalana96/restaurant-management-system",
       },
     ],
     category: "Desktop Apps",
@@ -55,7 +56,7 @@ const projects = [
       " A comprehensive Vehicle Rental Management System built using Laravel, designed to streamline the process of Booking, vehicle listning, real-time allert, reporting, and analytics...",
     links: [
       {
-        webLink: "https://youtube.com",
+        webLink: "#",
       },
       {
         githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
@@ -71,10 +72,10 @@ const projects = [
       "A desktop application for managing stock levels, purchase orders, sales, Inventory tracking, supplier management, GRN, reporting tools...",
     links: [
       {
-        webLink: "https://example.com",
+        webLink: "#",
       },
       {
-        githubLink: "https://github.com/PCSB-Web-Team/online-judge-server",
+        githubLink: "#",
       },
     ],
     category: "Desktop Apps",
